@@ -1,6 +1,7 @@
 module.exports = {
-  extends: ['airbnb-base', 'prettier'],
-  plugins: ['prettier'],
+  parser: 'babel-eslint',
+  extends: ['airbnb-base', 'prettier', 'plugin:flowtype/recommended'],
+  plugins: ['prettier', 'flowtype'],
   rules: {
     'prettier/prettier': ['error'],
   },
