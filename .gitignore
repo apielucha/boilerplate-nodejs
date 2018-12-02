@@ -1,11 +1,8 @@
 # Distribution files
-dist/
+lib/
 
-# dotenv environment variables file
+# environment variables file
 .env
-
-# editor configs
-.editorconfig
 
 
 

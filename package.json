@@ -1,13 +1,14 @@
 {
   "name": "boilerplate-nodejs",
   "version": "1.0.0",
-  "description": "Boilerplate for NodeJS server using Babel and ESLint.",
-  "main": "src/app.js",
+  "description": "Boilerplate for NodeJS server using Babel, ESLint and Jest.",
+  "main": "src/app.mjs",
   "scripts": {
     "build": "./bin/build",
     "dev": "./bin/dev",
     "lint": "./bin/lint",
     "preinstall": "./bin/preinstall",
+    "prettier": "./bin/prettier",
     "start": "./bin/start",
     "test": "./bin/test"
   },
@@ -16,9 +17,12 @@
     "url": "git+ssh://git@github.com/apielucha/boilerplate-nodejs.git"
   },
   "keywords": [
-    "nodejs",
     "babel",
-    "eslint"
+    "boilerplate",
+    "eslint",
+    "jest",
+    "nodejs",
+    "nodemon"
   ],
   "author": "Alexandre Pielucha",
   "license": "MIT",
@@ -26,29 +30,23 @@
     "url": "https://github.com/apielucha/boilerplate-nodejs/issues"
   },
   "homepage": "https://github.com/apielucha/boilerplate-nodejs#readme",
-  "dependencies": {
-    "@babel/polyfill": "^7.0.0",
-    "dotenv": "^6.0.0"
-  },
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
     "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "chai": "^4.1.2",
-    "eslint": "^5.5.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",
-    "mocha": "^5.2.0",
-    "nodemon": "^1.18.4"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "airbnb-base"
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.7",
+    "prettier": "^1.15.3",
+    "regenerator-runtime": "^0.13.1"
   }
 }

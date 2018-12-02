@@ -14,4 +14,4 @@ createFileIfNotExists() {
 }
 
 createFileIfNotExists '.env' '.env.example'
-createFileIfNotExists '.editorconfig' '.editorconfig.example'
+# createFileIfNotExists '.editorconfig' '.editorconfig.example'
